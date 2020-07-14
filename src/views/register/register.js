@@ -1,54 +1,60 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import '../../style/main.css';
-import '../../style/login.css';
-import auto from '../../assets/auto.png';
+import auto from '../../assets/auto.png'
 import wave from '../../assets/wave.png';
 
 
-class login extends React.Component {
+class register extends React.Component {
+
     render() {
         return (
-           
-               
-            
+
             <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
-                 <body>
+                <body>
                     <img class="wave" src={wave}></img>
                 </body>
                 <div className="max-w-md w-full">
                     <div>
-                        <img className="mx-auto h-13 w-auto" src={auto} alt="Workflow">
-                        </img>
+                        <img className="mx-auto h-10 w-auto" src={auto} alt="Workflow"></img>
                         <h2 className="mt-6 text-center text-3xl leading-9 font-extrabold text-gray-900">
                             Bienvenido
                         </h2>
 
                     </div>
                     <form className="mt-8" action="#" method="POST">
-                        <input type="hidden" name="remember" value="true" />
                         <div className="rounded-md shadow-sm">
+                            <div class="w-full md:w-1/2 px-3 mb-3 pt-0 md:mb-0">
+                                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                                    Nombre
+                                </label>
+                                <input aria-label="Name" name="name" type="name" required className="px-3 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full" placeholder="Name" />
+                                
+                                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                                    Apellido
+                                </label>
+                                <input aria-label="Name" name="name" type="name" required className="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal" placeholder="Name" />
+                                
+                            </div>
                             <div>
+                            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                                    Correo
+                                </label>
                                 <input aria-label="Email address" name="email" type="email" required className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 sm:text-sm sm:leading-5" placeholder="Email address" />
                             </div>
                             <div className="-mt-px">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                                    Contraseña
+                                </label>
                                 <input aria-label="Password" name="password" type="password" required className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 sm:text-sm sm:leading-5" placeholder="Password" />
                             </div>
-                        </div>
-
-                        <div className="mt-6 flex items-center justify-between">
-                            <div className="flex items-center">
-                                <input id="remember_me" type="checkbox" className="form-checkbox h-4 w-4 text-indigo-600 transition duration-150 ease-in-out" />
-                                <label for="remember_me" className="ml-2 block text-sm leading-5 text-gray-900">
-                                    Recordarme
+                            <div className="-mt-px">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                                    Repite Contraseña
                                 </label>
+                                <input aria-label="Password" name="password" type="password" required className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 sm:text-sm sm:leading-5" placeholder="Repeat Password" />
                             </div>
-
-                            <div className="text-sm leading-5">
-                                <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500 focus:outline-none focus:underline transition ease-in-out duration-150">
-                                    ¿olvidaste tu contraseña?
-                                </a>
-                            </div>
+                            
                         </div>
 
                         <div className="mt-6">
@@ -58,7 +64,7 @@ class login extends React.Component {
                                         <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd" />
                                     </svg>
                                 </span>
-                                    Iniciar Sesion
+                                    Registrarme
                             </button>
                         </div>
                     </form>
@@ -70,5 +76,4 @@ class login extends React.Component {
     }
 }
 
-
-export default login;
+export default register;
