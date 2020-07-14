@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from 'react';
 import '../../style/main.css';
+import '../../style/register.css';
 import auto from '../../assets/auto.png'
 import wave from '../../assets/wave.png';
 
@@ -15,8 +16,8 @@ class register extends React.Component {
                     <img class="wave" src={wave} alt=""></img>
                 </body>
                 <div className="max-w-md w-full">
-                    <div>
-                        <img className="mx-auto h-10 w-auto" src={auto} alt="Workflow"></img>
+                    <div className="header">
+                        <img className="mx-auto h-20 w-auto" src={auto} alt="Workflow"></img>
                         <h2 className="mt-6 text-center text-3xl leading-9 font-extrabold text-gray-900">
                             Bienvenido
                         </h2>

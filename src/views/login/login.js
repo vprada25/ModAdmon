@@ -14,11 +14,11 @@ class login extends React.Component {
             
             <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
                  <body>
-                    <img class="wave" src={wave}></img>
+                    <img class="wave" src={wave} alt=""></img>
                 </body>
                 <div className="max-w-md w-full">
                     <div>
-                        <img className="mx-auto h-13 w-auto" src={auto} alt="Workflow">
+                        <img className="mx-auto h-56 w-auto" src={auto} alt="Workflow">
                         </img>
                         <h2 className="mt-6 text-center text-3xl leading-9 font-extrabold text-gray-900">
                             Bienvenido
@@ -29,9 +29,15 @@ class login extends React.Component {
                         <input type="hidden" name="remember" value="true" />
                         <div className="rounded-md shadow-sm">
                             <div>
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                                    Nombre
+                                </label>
                                 <input aria-label="Email address" name="email" type="email" required className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 sm:text-sm sm:leading-5" placeholder="Email address" />
                             </div>
                             <div className="-mt-px">
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                                    Contraseña
+                                </label>
                                 <input aria-label="Password" name="password" type="password" required className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 sm:text-sm sm:leading-5" placeholder="Password" />
                             </div>
                         </div>
