@@ -2,6 +2,7 @@
 import React from 'react';
 import '../../style/main.css';
 import auto from '../../assets/auto.png'
+import wave from '../../assets/wave.png';
 
 
 class register extends React.Component {
@@ -10,6 +11,9 @@ class register extends React.Component {
         return (
 
             <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+                <body>
+                    <img class="wave" src={wave}></img>
+                </body>
                 <div className="max-w-md w-full">
                     <div>
                         <img className="mx-auto h-10 w-auto" src={auto} alt="Workflow"></img>
