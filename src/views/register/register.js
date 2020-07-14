@@ -12,7 +12,7 @@ class register extends React.Component {
 
             <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
                 <body>
-                    <img class="wave" src={wave}></img>
+                    <img class="wave" src={wave} alt=""></img>
                 </body>
                 <div className="max-w-md w-full">
                     <div>
@@ -20,7 +20,6 @@ class register extends React.Component {
                         <h2 className="mt-6 text-center text-3xl leading-9 font-extrabold text-gray-900">
                             Bienvenido
                         </h2>
-
                     </div>
                     <form className="mt-8" action="#" method="POST">
                         <div className="rounded-md shadow-sm">
@@ -29,32 +28,44 @@ class register extends React.Component {
                                     Nombre
                                 </label>
                                 <input aria-label="Name" name="name" type="name" required className="px-3 py-3 placeholder-gray-400 text-gray-700 relative bg-white bg-white rounded text-sm shadow outline-none focus:outline-none focus:shadow-outline w-full" placeholder="Name" />
-                                
+
                                 <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
                                     Apellido
                                 </label>
                                 <input aria-label="Name" name="name" type="name" required className="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal" placeholder="Name" />
-                                
+
                             </div>
                             <div>
-                            <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                                <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
                                     Correo
                                 </label>
                                 <input aria-label="Email address" name="email" type="email" required className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-t-md focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 sm:text-sm sm:leading-5" placeholder="Email address" />
                             </div>
                             <div className="-mt-px">
-                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
                                     Contraseña
                                 </label>
                                 <input aria-label="Password" name="password" type="password" required className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 sm:text-sm sm:leading-5" placeholder="Password" />
                             </div>
                             <div className="-mt-px">
-                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
+                                {/*
+                                <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-first-name">
                                     Repite Contraseña
                                 </label>
+                                
                                 <input aria-label="Password" name="password" type="password" required className="appearance-none rounded-none relative block w-full px-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-b-md focus:outline-none focus:shadow-outline-blue focus:border-blue-300 focus:z-10 sm:text-sm sm:leading-5" placeholder="Repeat Password" />
+                           */}
                             </div>
-                            
+                            <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" for="grid-state">
+                                Rol
+                            </label>
+                            <div class="relative">
+                                <select class="block appearance-none w-full bg-gray-200 border border-gray-200 text-gray-700 py-3 px-4 pr-8 rounded leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="grid-state">
+                                    <option>Administrador</option>
+                                    <option>Super-Administrador</option>
+                                    <option>Empleado</option>
+                                </select>
+                            </div>
                         </div>
 
                         <div className="mt-6">
