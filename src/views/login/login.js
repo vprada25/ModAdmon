@@ -21,7 +21,6 @@ class login extends React.Component {
                         <h2 className="mt-6 text-center text-3xl leading-9 font-extrabold text-gray-900">
                             Bienvenido
                         </h2>
-
                     </div>
                     <form className="mt-8" action="#" method="POST">
                         <input type="hidden" name="remember" value="true" />
